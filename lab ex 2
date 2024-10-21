@@ -1,0 +1,42 @@
+# Lab 2: Implementation of Network Topologies
+
+## Objective:
+- To implement and understand different network topologies.
+
+## Materials Required:
+- Packet Tracer software.
+
+## Theory:
+- **Overview of Various Network Topologies**:
+  - **Bus Topology**: All devices share a single communication line. Easy to set up but can lead to data collisions.
+  - **Star Topology**: All devices are connected to a central hub or switch. Easy to manage and troubleshoot, but if the central device fails, the whole network goes down.
+  - **Ring Topology**: Each device is connected to two others, forming a ring. Data travels in one direction, reducing collisions but can be disrupted if one device fails.
+  - **Mesh Topology**: Each device is connected to every other device. Provides high redundancy and reliability but is complex and costly to implement.
+  - **Hybrid Topology**: A combination of two or more topologies. Flexible and scalable but can be complicated to design and manage.
+
+## Procedure:
+1. **Open Packet Tracer**: Launch the software and explore its interface.
+2. **Implement a Bus Topology**:
+   - Place at least three devices (computers) and connect them using a single cable segment.
+3. **Implement a Star Topology**:
+   - Place at least three devices and connect them to a central switch.
+4. **Implement a Ring Topology**:
+   - Place at least three devices and connect them in a circular manner.
+5. **Implement a Mesh Topology**:
+   - Place at least three devices and connect each device to every other device.
+6. **Test the Connections**:
+   - Use the ping command to test connectivity between devices in each topology.
+
+## Observations:
+- **Document the Setup**: 
+  - Provide screenshots of each topology.
+- **Ping Results**:
+  - Record successful ping results for each topology to demonstrate connectivity.
+
+## Conclusion:
+- **Summarize the Characteristics and Differences of Each Topology**:
+  - **Bus Topology**: Simple and cost-effective, but limited in scale.
+  - **Star Topology**: Most common in modern networks due to ease of management.
+  - **Ring Topology**: Efficient but vulnerable to device failure.
+  - **Mesh Topology**: Offers high redundancy but is complex.
+  - **Hybrid Topology**: Combines the benefits of multiple topologies, making it versatile for various networking needs.
