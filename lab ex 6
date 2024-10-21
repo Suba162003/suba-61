@@ -1,0 +1,47 @@
+# Lab 6: NAT Configuration
+
+## Objective:
+- To configure Network Address Translation (NAT).
+
+## Materials Required:
+- Packet Tracer software.
+
+## Theory:
+- **Overview of NAT**: Network Address Translation (NAT) is a method used to translate private (non-routable) IP addresses to a public IP address before packets are forwarded to an external network. It helps conserve IP addresses and provides an additional layer of security.
+- **Importance of NAT**: NAT allows multiple devices on a local network to share a single public IP address, making it essential for home and corporate networks.
+
+## Procedure:
+1. **Create a Network**:
+   - Design a network in Packet Tracer that includes an internal segment (using private IP addresses) and an external segment (using public IP addresses).
+  
+2. **Configure NAT on the Router**:
+   - Access the router's CLI and configure NAT. This involves:
+     - Defining the internal network (inside) and the external network (outside).
+     - Configuring NAT overload (PAT) to allow multiple internal IPs to be mapped to a single public IP.
+     ```plaintext
+     enable
+     configure terminal
+     interface gig0/0
+     ip nat inside
+     
+     interface gig0/1
+     ip nat outside
+     
+     ip nat inside source list [access-list-number] interface gig0/1 overload
+     
+     access-list [access-list-number] permit [private_IP_range]
+     ```
+
+3. **Test Connectivity**:
+   - From a device in the internal segment, attempt to access an external site (e.g., using ping or a web browser) to verify that NAT is functioning correctly.
+
+## Observations:
+- **Document the NAT Configuration Steps**:
+  - Include all commands used to configure NAT and any necessary access lists.
+  
+- **Test Results**:
+  - Record successful tests of connectivity from internal devices to the external network.
+
+## Conclusion:
+- **Summarize the Benefits and Working of NAT**:
+  - NAT effectively conserves IP addresses by allowing multiple devices to share a single public IP address. It enhances security by hiding internal IP addresses and is essential for the functionality of many private networks.
