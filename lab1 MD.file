@@ -1,0 +1,46 @@
+Communication, Study of Cables and Its Color Codes
+Objective:
+To introduce Packet Tracer and its basic features.
+To understand peer-to-peer communication.
+To study different types of network cables and their color codes.
+Materials Required:
+Packet Tracer software.
+Network cables (Ethernet, crossover, etc.).
+Theory:
+Overview of Packet Tracer: Cisco Packet Tracer is a network simulation tool that allows users to create network topologies, configure devices, and simulate packet flows.
+Basics of Peer-to-Peer Communication: This involves direct communication between two devices without a centralized server, allowing for efficient data exchange.
+Color Coding Standards for Network Cables:
+Ethernet Cable: T568A and T568B standards.
+T568A: White/Green, Green, White/Orange, Blue, White/Blue, Orange, White/Brown, Brown.
+T568B: White/Orange, Orange, White/Green, Blue, White/Blue, Green, White/Brown, Brown.
+Procedure:
+Open Packet Tracer: Launch the software and explore its interface.
+Create a Simple Network:
+Drag two computers and a switch into the workspace.
+Connect the computers to the switch using Ethernet cables.
+Configure IP Addresses:
+Click on each computer and navigate to the Desktop tab → IP Configuration.
+Assign the following IP addresses:
+Computer 1: 192.168.1.1 (Subnet Mask: 255.255.255.0)
+Computer 2: 192.168.1.2 (Subnet Mask: 255.255.255.0)
+Test the Connection:
+Open the Command Prompt on Computer 1 and use the ping command:
+plaintext
+Copy code
+ping 192.168.1.2
+Check for successful replies.
+Study Network Cables:
+Review the different types of cables (Ethernet, crossover) and their respective color codes.
+Observations:
+IP Configuration Steps:
+Documented IP addresses assigned to each computer.
+Ping Results:
+Record successful ping results, indicating proper connectivity.
+Cable Color Codes:
+T568A:
+White/Green, Green, White/Orange, Blue, White/Blue, Orange, White/Brown, Brown.
+T568B:
+White/Orange, Orange, White/Green, Blue, White/Blue, Green, White/Brown, Brown.
+Conclusion:
+Summarized the steps taken to create the network and configure devices.
+Reflected on the importance of understanding basic networking concepts, including IP addressing and the significance of different cable types and their color codes.
