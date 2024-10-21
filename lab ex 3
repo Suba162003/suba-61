@@ -1,0 +1,64 @@
+# Lab 3: Router Configuration (Creating Passwords, Configuring Interfaces)
+
+## Objective:
+- To configure a router by setting up passwords and interfaces.
+
+## Materials Required:
+- Packet Tracer software.
+
+## Theory:
+- **Basics of Router Configuration**: Involves setting up a router to manage network traffic, including configuring interfaces and security settings.
+- **Importance of Securing Router Access**: Properly securing router access is crucial to protect the network from unauthorized access and potential attacks.
+
+## Procedure:
+1. **Open Packet Tracer**: Launch the software and create a new workspace.
+2. **Create a Network**:
+   - Add a router and two computers to the workspace.
+   - Connect the computers to the router using appropriate cables.
+3. **Access the Router's CLI**:
+   - Click on the router and select the CLI tab.
+4. **Set Up Passwords**:
+   - Configure console password:
+     ```plaintext
+     enable
+     configure terminal
+     line console 0
+     password your_console_password
+     login
+     ```
+   - Configure enable password:
+     ```plaintext
+     enable secret your_enable_password
+     ```
+   - Configure VTY password:
+     ```plaintext
+     line vty 0 4
+     password your_vty_password
+     login
+     ```
+5. **Configure Router Interfaces**:
+   - Assign IP addresses to the router interfaces:
+     ```plaintext
+     interface gig0/0
+     ip address 192.168.1.1 255.255.255.0
+     no shutdown
+     
+     interface gig0/1
+     ip address 192.168.2.1 255.255.255.0
+     no shutdown
+     ```
+6. **Test Connectivity**:
+   - Configure the IP addresses on the computers:
+     - Computer 1: `192.168.1.2` (Subnet Mask: `255.255.255.0`)
+     - Computer 2: `192.168.2.2` (Subnet Mask: `255.255.255.0`)
+   - Use the ping command from each computer to test connectivity through the router.
+
+## Observations:
+- **Document the Configuration Steps**:
+  - Provide a summary of the commands used for configuration.
+- **Test Results**:
+  - Record successful ping results between the two computers to confirm connectivity.
+
+## Conclusion:
+- **Reflect on the Importance of Securing and Configuring Routers Properly**:
+  - Proper router configuration is essential for network security and functionality. Setting strong passwords helps prevent unauthorized access and protects the integrity of the network.
