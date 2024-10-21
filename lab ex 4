@@ -1,0 +1,41 @@
+# Lab 4: IP Addressing and Subnetting (VLSM)
+
+## Objective:
+- To understand and implement IP addressing and Variable Length Subnet Masking (VLSM).
+
+## Materials Required:
+- Packet Tracer software.
+
+## Theory:
+- **Basics of IP Addressing and Subnetting**: IP addressing is a method used to identify devices on a network. Subnetting divides a network into smaller, manageable segments.
+- **Overview of VLSM**: Variable Length Subnet Masking allows for subnets of different sizes to be created, optimizing the use of IP addresses.
+
+## Procedure:
+1. **Design a Network**:
+   - Create a network layout in Packet Tracer that includes multiple subnets based on the requirements of your scenario.
+  
+2. **Calculate the Subnets Using VLSM**:
+   - Start with a given IP address (e.g., `192.168.1.0/24`).
+   - Determine the number of hosts required for each subnet.
+   - Calculate the subnet masks for each subnet to accommodate the required hosts.
+  
+3. **Assign IP Addresses**:
+   - Assign IP addresses to devices in each subnet based on the calculated ranges.
+   - Example:
+     - Subnet 1: `192.168.1.0/26` (Hosts: 62)
+     - Subnet 2: `192.168.1.64/27` (Hosts: 30)
+     - Subnet 3: `192.168.1.96/28` (Hosts: 14)
+  
+4. **Test Connectivity**:
+   - Use the ping command to test connectivity between devices located in different subnets.
+
+## Observations:
+- **Document the Subnet Calculations**:
+  - Include the subnet mask, network address, and valid host ranges for each subnet.
+  
+- **Test Results**:
+  - Record the successful ping results to verify connectivity between devices in different subnets.
+
+## Conclusion:
+- **Summarize the Process and Importance of Proper IP Addressing and Subnetting**:
+  - Proper IP addressing and subnetting using VLSM optimizes the use of IP addresses, reduces waste, and enhances network performance. Understanding these concepts is critical for effective network design and management.
